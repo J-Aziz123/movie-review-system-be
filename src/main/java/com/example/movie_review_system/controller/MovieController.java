@@ -4,7 +4,6 @@ import com.example.movie_review_system.dto.CreateMovieRequest;
 import com.example.movie_review_system.exception.MovieNotFound;
 import com.example.movie_review_system.model.Movie;
 import com.example.movie_review_system.service.MovieService;
-import com.example.movie_review_system.service.ReviewService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
