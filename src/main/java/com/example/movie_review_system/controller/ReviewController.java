@@ -26,4 +26,11 @@ public class ReviewController {
         return ResponseEntity.ok(reviewService.createReview(id, createReviewRequest));
     }
 
+
+    @DeleteMapping("/{id}")
+    ResponseEntity<Object> deleteReview(@PathVariable final int id) {
+        reviewService.deleteReview(id);
+        return ResponseEntity.ok(String.format("Successfully deleted review with id %d", id));
+    }
+
 }
